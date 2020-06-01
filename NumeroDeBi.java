@@ -10,7 +10,7 @@ public class NumeroDeBi {
         // Por enquanto, manter assim ajuda a garantir compliance.
         String regex = "^00\\d{7}[a-zA-Z]{2}0\\d{2}";
 
-        if (Pattern.matches(regex, number) && number.length() == 14) {
+        if (Pattern.matches(regex, number)) {
             this.number = number.toUpperCase();
         } else {
             throw new InvalidBiNumberException(
