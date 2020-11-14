@@ -1,7 +1,7 @@
 import java.util.regex.Pattern;
 
 public class NumeroDeBi {
-    private String number;
+    private final String number;
 
     public NumeroDeBi(String number) throws InvalidBiNumberException {
 
